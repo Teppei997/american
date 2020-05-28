@@ -1,0 +1,58 @@
+
+
+@mixin pc {
+    @media screen and (max-width: 1024px){
+        @content;
+    }
+}
+
+@mixin tab {
+    @media screen and (max-width: 680px){
+        @content;
+    }
+}
+
+@mixin sp {
+    @media screen and (max-width: 480px){
+        @content;
+    }
+}
+
+.container2{
+    @include pc {
+       display: flex;
+    }
+
+    @include tab {
+     flex-direction: column;
+     margin-right: 0;
+    }
+
+    @include sp {
+      flex-direction: column;
+      margin-right: 0;
+    }
+}
+
+@mixin tab {
+    @media screen and(max-width: 680px){
+        @content;
+    }
+
+    @media screen and(max-width: 480px){
+        @content;
+    }
+}
+
+.footer-main{
+
+    @include tab{
+        bottom: 0;
+    }
+
+    @include sp{
+        flex-direction: column;
+        bottom: 0;
+    }
+
+}
