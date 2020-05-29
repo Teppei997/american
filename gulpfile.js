@@ -19,7 +19,7 @@ const sass = require('gulp-sass');
 gulp.task('sass', function () {
     return (
         // sassフォルダのstyle .scsを取得
-      gulp.src('sass/style.scss')
+      gulp.src('sass/*.scss')
         .pipe(sass({
             // outputStyle: 'compressed'
         }))// 取得したscssをcssに変換
