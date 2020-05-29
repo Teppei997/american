@@ -135,3 +135,8 @@
 @media screen and (max-width: 1024px) {
   .header-left {
     font-size: 20px; } }
+
+.btn {
+  background-color: blue; }
+  .btn .text-color {
+    color: burlywood; }
