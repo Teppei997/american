@@ -21,28 +21,31 @@
 .container2{
     @include pc {
        display: flex;
+       width: 100vw;
     }
 
     @include tab {
-     flex-direction: column;
-     margin-right: 0;
+       flex-direction: column;
+       display: flex;
+       align-items: center;
     }
 
     @include sp {
-      flex-direction: column;
-      margin-right: 0;
+       flex-direction: column;
+       display: flex;
+       align-items: center;
     }
 }
 
-@mixin tab {
-    @media screen and(max-width: 680px){
-        @content;
-    }
+// @mixin tab {
+//     @media screen and(max-width: 680px){
+//         @content;
+//     }
 
-    @media screen and(max-width: 480px){
-        @content;
-    }
-}
+//     @media screen and(max-width: 480px){
+//         @content;
+//     }
+// }
 
 .footer-main{
 
@@ -55,4 +58,15 @@
         bottom: 0;
     }
 
+}
+
+.text1{
+
+    @include tab{
+        width: 100vw;
+    }
+
+    @include sp{
+        width: 100vw;
+    }
 }
