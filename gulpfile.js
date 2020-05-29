@@ -19,10 +19,19 @@ const sass = require('gulp-sass');
 gulp.task('sass', function () {
     return (
         // sassフォルダのstyle .scsを取得
-      gulp.src('sass/style.scss')
+      gulp.src('sass/*.scss')
         .pipe(sass({
             // outputStyle: 'compressed'
         }))// 取得したscssをcssに変換
         .pipe(gulp.dest('css'))//変換した結果をcssフォルダに出力
     )
   })
+
+// sassファイルをずっと監視するタスクを作る
+gulp.task('sass:watch',function(){
+    // sassフォルダ内の全てのファイルの変更を監視
+    // 変更があった場合scssをcssに変換
+    gulp.watch('sass/*.scss',gulp.task ('sass'))
+  
+  
+  });

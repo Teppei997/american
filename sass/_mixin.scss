@@ -1,0 +1,80 @@
+// @mixin pc{
+//     @media screen and(max-width: 1024px){
+//         background-color:#e4ee;
+//     }
+    
+// }
+@mixin pc{
+    @media screen and(max-width: 1024px){
+        @content;
+    }
+    
+}
+ @mixin tab{
+            @media screen and(max-width: 680px){
+                @content;
+            }
+ }
+ @mixin sp{
+    @media screen and(max-width: 480px){
+        @content;
+    }
+}
+.main-container{
+    @include pc{
+        display: flex;
+        justify-content: center;
+        margin:0 50px  200px 50px;
+       
+
+    }
+
+    @include tab{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 200px;
+        
+        
+        
+    }
+    @include sp{
+        flex-direction: column;
+
+        justify-content: center;
+        margin-bottom: 200px;
+    }
+    
+}
+
+
+
+ @mixin tab{
+            @media screen and(max-width: 680px){
+                @content;
+            }
+ }
+ @mixin sp{
+    @media screen and(max-width: 480px){
+        @content;
+    }
+}
+.main-footer{
+   
+
+    @include tab{
+        width: 99%;
+
+        bottom: 0;
+        
+        
+        
+    }
+    @include sp{
+        flex-direction: column;
+        bottom: 0;
+        
+       
+    }
+
+}
