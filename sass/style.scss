@@ -1,16 +1,13 @@
 @import 'variables';
-
 @import 'mixin';
-
-
 .header-main{
-    width: 99%;
-    height: 80px;
     background-color:$red ;
-    margin: auto;
     display: flex;
     justify-content:space-between;
     align-items: center;
+    width: 99%;
+    height: 80px;
+    margin: auto;
     position: fixed;
     top: 0;
     h1{
@@ -25,46 +22,40 @@
     }
 }
 .container2{
-    margin-top: 100px;
-    margin-bottom: 150px;
     height: 600px;
+    margin-top: 100px;;
+    margin-bottom: 150px;
     display: flex;
     justify-content: space-between;
     img{
         width: 400px;
         height: 400px;
     }
-
-    .text1{
-        width: 400px;
-    }
-
-    .text2{
-        width: 400px;
-    }
-
-    .text3{
-        width: 400px;
-        margin-bottom: 100px;
-    }
-
-
 }
-
 .footer-main{
-    width: 99%;
     height: 80px;
-    background-color: $red;
+    width: 99%;
+    background-color:$red ;
     display: flex;
     justify-content: center;
+    margin-top: 100px;
+    margin-right: 20px;
     position: fixed;
     bottom: 0;
-
     h1{
-        font-family: Arial, Helvetica, sans-serif;
+        font-family:Arial, Helvetica, sans-serif;
     }
 }
-
+.text1{
+    width: 400px;
+}
+.text2{
+    width: 400px;
+}
+.text3{
+    width: 400px;
+    margin-bottom: 100px;
+}
 @media screen and (max-width:1024px){
     .header-left {
         font-size: 20px;
