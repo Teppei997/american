@@ -2,10 +2,11 @@
   .main-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 200px; } }
+    margin: 0 50px  200px 50px; } }
 
 @media screen and (max-width: 680px) {
   .main-container {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 200px; } }
@@ -73,7 +74,8 @@
   width: 400px; }
 
 .img-box3 {
-  width: 400px; }
+  width: 400px;
+  margin-bottom: 100px; }
 
 @media screen and (max-width: 1024px) {
   .header-left {

@@ -24,11 +24,13 @@
     @include pc{
         display: flex;
         justify-content: center;
-        margin-bottom: 200px;
+        margin:0 50px  200px 50px;
+       
 
     }
 
     @include tab{
+        display: flex;
         flex-direction: column;
         justify-content: center;
         margin-bottom: 200px;
@@ -61,6 +63,7 @@
    
 
     @include tab{
+        width: 99%;
 
         bottom: 0;
         
