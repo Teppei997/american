@@ -1,0 +1,20 @@
+@charset 'UTF-8';
+
+body {
+
+    height: 100vh;
+    width: 100vw;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    
+}
+.bg-text{
+    font-size: 100px;
+    color: blue;
+    text-shadow: -4px -4px 1px red,4px 4px 1px yellow;
+
+}
